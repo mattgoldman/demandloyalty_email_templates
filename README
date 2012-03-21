@@ -1,8 +1,8 @@
 TODO: 
-- Get rid of any links/other references to campaign monitor
-- Perfect styles, especially on mobile and TEST
--- Setup email@mattgoldman.biz, other accounts, and forwarders for testing. Then test this campaign heavily.
-- Integrate CM tags to make useful template
+- Get rid of any links/other references to CS
+- Perfect styles, especially on mobile
+-- Setup email@mattgoldman.biz, other accounts, and forwarders for testing. Then test heavily.
+- Integrate CS tags to finalize template
 - Split into individual modules
 -- Logo header OR Text header
 -- Hero Image
@@ -13,5 +13,6 @@ TODO:
 --- Float right image
 --- Full width image
 --- Blockquote
+--- Etc
 
-- Design multiple themes
+- Design multiple themes, color schemes, type combos
