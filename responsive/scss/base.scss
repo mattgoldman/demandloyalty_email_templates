@@ -1,0 +1,168 @@
+@import "themes/default";
+.no_padding {padding-top:0;padding-bottom:0;}
+.no_margin {margin-top:0;margin-bottom:0;}
+@mixin font($size, $weight:normal, $style:normal) {
+  font-family:$fontFamily;
+  font-size:$size;
+	font-style:$style;
+	font-weight:$weight;
+	line-height:$size*1.5;
+}
+
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background-color:$pageBgColor;
+	-webkit-text-size-adjust:none;
+	
+ 	.container {
+		background-color:$pageBgColor;
+		
+		td.first_cell {
+			background-color:$pageBgColor;
+		}
+	}
+}
+
+#header {
+	
+	.logocell {
+		background-color:$pageBgColor;
+		
+		img#logo {
+			-ms-interpolation-mode:bicubic;
+		}
+	
+		span#logotype {
+			color:#a6a6a6;
+			text-shadow: 0 1px 0 #ffffff;
+			@include font($logoSize, bold);
+		}
+	}
+}
+
+.module {
+	
+	td.container_cell {
+		background-color: $containerBgColor;
+		
+		td {
+			background-color: $containerBgColor;
+		}
+		
+		&.gallery {
+			border-left:7px solid $containerBgColor;
+		}
+	}
+	
+	&.promotable {
+		
+		.promocell {
+			background-color: $heroBgColor;
+		
+			h3 {
+				border-bottom:10px solid $heroBgColor;
+				color:$heroHeadingColor !important;
+				@extend .no_margin;
+				@extend .no_padding;
+				@include font($heroHeadingSize);
+		
+				a {
+					color:$heroHeadingLinkColor !important;
+					text-decoration:none;
+			
+					strong {
+						font-weight: bold;
+					}
+				}
+			}
+		
+			p {
+				color:$heroBodyColor;
+				@extend .no_margin;
+				@extend .no_padding;
+				@include font($heroBodySize);
+			
+				a {
+					color:$heroBodyLinkColor !important;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+	
+	h4 {
+		color:$headingColor !important;
+		margin-top:0;
+		margin-bottom:10px;
+		@extend .no_padding;
+		@include font($headingFourSize);
+		
+		a {
+			color:$headingColor;
+			font-weight:bold;
+			text-decoration:none;
+		}
+	}
+	
+	h5 {
+		color:$headingColor !important;
+		margin-top:0;
+		margin-bottom:5px;
+		@extend .no_padding;
+		@include font($headingFiveSize, bold);
+	}
+	
+	h6 {
+		color:$headingSixColor !important;
+		margin-top:0;
+		margin-bottom:3px;
+		@extend .no_padding;
+		@include font($headingSixSize, bold);
+	}
+	
+	p, ul, ol, dl, blockquote {
+		color:$bodyColor;
+		margin-top:0;
+		margin-bottom:$bodySize*1.5;
+		@extend .no_padding;
+		@include font($bodySize);
+		
+		&:last-child {
+			margin-bottom:0px;
+		}
+		
+		a {
+			color:$linkColor;
+			font-weight:bold;
+			text-decoration:none;
+		}
+	}
+	
+	ul {
+		list-style-type: square;
+	}
+	
+	ul, ol {
+		padding-left:30px;
+	}
+	
+	&.footer {
+		p {
+			color:$footerColor;
+			@extend .no_margin;
+			@extend .no_padding;
+			@include font(12px);
+			
+			&.address {
+				color:$footerColor;
+				@include font(11px);
+			}
+			
+			a {
+				font-weight:bold;
+				text-decoration:none;
+			}
+		} 
+	}
+}
