@@ -2,25 +2,20 @@ $pageBgColor: #e4e4e4;
 $containerBgColor: #fff;
 
 /* Modules */
+$logoColor: #a6a6a6;
+$logoShadowColor: #fff;
 $bodyColor: #888;
 $headingColor: #444;
 $headingSixColor: darken($bodyColor, 10%);
 $linkColor: #3ca7dd;
-$footerColor: #b3b3b3;
-
-$fontFamily: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-$bodySize: 13px;
-$logoSize: $bodySize*2;
-$headingFourSize: $bodySize*1.25;
-$headingFiveSize: $bodySize*1.1;
-$headingSixSize: $bodySize;
 
 /* Hero Block */
 $heroHeadingColor: #fff;
 $heroHeadingLinkColor: #fff;
 $heroBodyColor: #bbb;
 $heroBodyLinkColor: #fff;
-$heroLinkColor: #fff;
-$heroHeadingSize: $bodySize*1.6;
-$heroBodySize: $bodySize*1.1;
 $heroBgColor: #444;
+
+/* Footer */
+$footerBgColor: #f2f2f2;
+$footerColor: #b3b3b3;

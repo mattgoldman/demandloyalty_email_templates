@@ -1,4 +1,13 @@
 @import "themes/default";
+@import "typography/helvetica";
+$linkColor: #E97F02;
+/*
+Teal 009989
+Orange E97F02
+Green 8A9B0F
+Red C04848
+Magenta BD1550
+*/
 .no_padding {padding-top:0;padding-bottom:0;}
 .no_margin {margin-top:0;margin-bottom:0;}
 @mixin font($size, $weight:normal, $style:normal) {
@@ -34,8 +43,8 @@ body {
 		}
 	
 		span#logotype {
-			color:#a6a6a6;
-			text-shadow: 0 1px 0 #ffffff;
+			color:$logoColor;
+			text-shadow: 0 1px 0 $logoShadowColor;
 			@include font($logoSize, bold);
 		}
 	}
@@ -148,6 +157,12 @@ body {
 	}
 	
 	&.footer {
+		background-color: $footerBgColor;
+		
+		.cell {
+			background-color: $footerBgColor;
+		}
+		
 		p {
 			color:$footerColor;
 			@extend .no_margin;

@@ -1,0 +1,27 @@
+$pageBgColor: #1D150C;
+$containerBgColor: lighten($pageBgColor, 2%);
+
+/* Base */
+$bodyColor: lighten($pageBgColor, 70%);
+
+/* Logo */
+$logoColor: lighten($pageBgColor, 90%);
+$logoShadowColor: darken($pageBgColor, 90%);
+
+/* Headings */
+$headingColor: lighten($bodyColor, 10%);
+$headingSixColor: $headingColor;
+
+/* Links */
+$linkColor: lighten($bodyColor, 13%);
+
+/* Hero Block */
+$heroHeadingColor: lighten($pageBgColor, 20%);
+$heroHeadingLinkColor: $heroHeadingColor;
+$heroBodyColor: lighten($pageBgColor, 30%);
+$heroBodyLinkColor: $heroHeadingColor;
+$heroBgColor: lighten($pageBgColor, 80%);
+
+/* Footer */
+$footerBgColor: darken($pageBgColor, 1%);
+$footerColor: $bodyColor;
